@@ -1,58 +1,148 @@
 "use client";
 
 const page = () => {
+  // const tableData = [
+  //   {
+  //     sno: 1,
+  //     designation: ["Chairperson", "Vice-Chancellor"],
+  //     members: [{ name: "Prof. (Dr.) Bhagwan Nautiyal" }],
+  //   },
+  //   {
+  //     sno: 2,
+  //     designation: ["Teachers to Represent All Levels", "(Three to Eight)"],
+  //     members: [
+  //       { name: "Mr. Rajesh Kohli", dept: "B.Ed. Department" },
+  //       { name: "Bilal Ahmad", dept: "Paramedical Department" },
+  //       { name: "Mr. Yatendra Rawat", dept: "Agriculture Department" },
+  //     ],
+  //   },
+  //   {
+  //     sno: 3,
+  //     designation: ["One Member From the Management"],
+  //     members: [{ name: "Mr. Suman Nautiyal", dept: "Advocate" }],
+  //   },
+  //   {
+  //     sno: 4,
+  //     designation: ["Few Senior Administrative Officers"],
+  //     members: [{ name: "Dr. Amit Kumar", dept: "Registrar" }],
+  //   },
+  //   {
+  //     sno: 5,
+  //     designation: [
+  //       "One Nominee each from Local Society, Students, and Alumni",
+  //     ],
+  //     members: [
+  //       { name: "Mr. Pawan Nautiyal", dept: "Advocate" },
+  //       { name: "Mr. Aditya Nautiyal", dept: "" },
+  //       { name: "Mr. Kamleshwar Uniyal", dept: "" },
+  //     ],
+  //   },
+  //   {
+  //     sno: 6,
+  //     designation: [
+  //       "One Nominee each from Employers / Industrialists / Stakeholders",
+  //     ],
+  //     members: [
+  //       { name: "Mr. Rajesh Rana", dept: "" },
+  //       { name: "Mr. Rajesh Yadav", dept: "" },
+  //     ],
+  //   },
+  //   {
+  //     sno: 7,
+  //     designation: ["One Senior Teacher as the Coordinator / Director of IQAC"],
+  //     members: [{ name: "Dr. Kapil Mohan", dept: "Principal, BNYS" }],
+  //   },
+  // ];
   const tableData = [
-    {
-      sno: 1,
-      designation: ["Chairperson", "Vice-Chancellor"],
-      members: [{ name: "Prof. (Dr.) Bhagwan Nautiyal" }],
-    },
-    {
-      sno: 2,
-      designation: ["Teachers to Represent All Levels", "(Three to Eight)"],
-      members: [
-        { name: "Mr. Rajesh Kohli", dept: "B.Ed. Department" },
-        { name: "Bilal Ahmad", dept: "Paramedical Department" },
-        { name: "Mr. Yatendra Rawat", dept: "Agriculture Department" },
-      ],
-    },
-    {
-      sno: 3,
-      designation: ["One Member From the Management"],
-      members: [{ name: "Mr. Suman Nautiyal", dept: "Advocate" }],
-    },
-    {
-      sno: 4,
-      designation: ["Few Senior Administrative Officers"],
-      members: [{ name: "Dr. Amit Kumar", dept: "Registrar" }],
-    },
-    {
-      sno: 5,
-      designation: [
-        "One Nominee each from Local Society, Students, and Alumni",
-      ],
-      members: [
-        { name: "Mr. Pawan Nautiyal", dept: "Advocate" },
-        { name: "Mr. Aditya Nautiyal", dept: "" },
-        { name: "Mr. Kamleshwar Uniyal", dept: "" },
-      ],
-    },
-    {
-      sno: 6,
-      designation: [
-        "One Nominee each from Employers / Industrialists / Stakeholders",
-      ],
-      members: [
-        { name: "Mr. Rajesh Rana", dept: "" },
-        { name: "Mr. Rajesh Yadav", dept: "" },
-      ],
-    },
-    {
-      sno: 7,
-      designation: ["One Senior Teacher as the Coordinator / Director of IQAC"],
-      members: [{ name: "Dr. Kapil Mohan", dept: "Principal, BNYS" }],
-    },
-  ];
+  {
+    sno: 1,
+    designation: ["Chairperson"],
+    members: [
+      {
+        name: "Prof. (Dr.) Bhagwan Nautiyal",
+        dept: "Vice Chancellor",
+      },
+    ],
+  },
+  {
+    sno: 2,
+    designation: ["Director of IQAC – Member Secretary"],
+    members: [
+      {
+        name: "Prof. (Dr.) Anoop Badoni",
+        dept: "School of Agriculture",
+      },
+    ],
+  },
+  {
+    sno: 3,
+    designation: ["One Senior Administrative Official"],
+    members: [
+      {
+        name: "Registrar / Assistant Registrar",
+        dept: "",
+      },
+    ],
+  },
+  {
+    sno: 4,
+    designation: ["Eight Faculty from University"],
+    members: [
+      {
+        name: "Smt. Shalini Johnson",
+        dept: "School of Nursing, Paramedical and Allied Sciences",
+      },
+      {
+        name: "Mr. Someshwar Dobhal",
+        dept: "School of Arts and Humanities",
+      },
+      {
+        name: "Mr. Jagdeesh Chauhan",
+        dept: "School of Yogic Science & Naturopathy",
+      },
+      {
+        name: "Mr. Md. Bilal Ahmad",
+        dept: "School of Nursing, Paramedical and Allied Sciences",
+      },
+      {
+        name: "Smt. Jyoti",
+        dept: "School of Yogic Science & Naturopathy",
+      },
+      {
+        name: "Ms. Deepika Uniyal",
+        dept: "School of Engineering",
+      },
+      {
+        name: "Mr. Deepak Joshi",
+        dept: "School of Agriculture",
+      },
+      {
+        name: "Mr. D. K. Singh",
+        dept: "School of Nursing, Paramedical and Allied Sciences",
+      },
+    ],
+  },
+  {
+    sno: 5,
+    designation: [
+      "Three external experts on Quality Management / Industry / Local Community",
+    ],
+    members: [
+      {
+        name: "Dr. Vinay Nautiyal",
+        dept: "Govt. (P. G.) College, Uttarkashi",
+      },
+      {
+        name: "Dr. Pooja Kaintura",
+        dept: "Department of Sugarcane Development and Sugarcane Industries, Govt. of Uttarakhand",
+      },
+      {
+        name: "Dr. Abhishek Mathor",
+        dept: "GM – Research and Development, Omni Group of Companies, Punchkula",
+      },
+    ],
+  },
+];
   return (
     <>
       <section className="w-full py-10 bg-gray-50">
@@ -93,9 +183,9 @@ const page = () => {
               <tbody>
                 {tableData.map((row, index) => (
                   <tr key={index} className="border-t align-top">
-                    <td className="px-6 py-6 border">{row.sno}</td>
+                    <td className="px-6 py-6 border align-middle">{row.sno}</td>
 
-                    <td className="px-6 py-6 border">
+                    <td className="px-6 py-6 border align-middle">
                       {row.designation.map((des, i) => (
                         <div
                           key={i}
@@ -108,7 +198,7 @@ const page = () => {
                       ))}
                     </td>
 
-                    <td className="px-6 py-6 space-y-4 border">
+                    <td className="px-6 py-6 space-y-4 border align-middle">
                       {row.members.map((member, i) => (
                         <div key={i}>
                           <div className="font-medium">{member.name}</div>
